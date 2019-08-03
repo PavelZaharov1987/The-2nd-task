@@ -1,13 +1,4 @@
-_build
-_tracks
+_trash 
 
-opa-debug-js
-
-*.opp
-*.opx
-*.opx.broken
-*.dump
-*.api
-*.api-txt
-*.exe
 *.log
+*.tmp
