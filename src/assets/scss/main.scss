@@ -34,6 +34,11 @@ body {
 
 h1, h2, h3, h4, h5, h6 { margin: 0; }
 
+h2 {
+  font-weight: bold;
+  font-size: 19px;
+}
+
 a { text-decoration: none; }
 
 ul, li {
@@ -58,7 +63,7 @@ section, .section {
 
 .wrapper {
   margin: 0 auto;
-  min-height: 100vh;
+  //min-height: 100vh;
 }
 
 .content-wrapper {
@@ -85,4 +90,5 @@ section, .section {
 // Modules
 // @import "modules/my-module.scss";
 
-@import "../../pug/includes/modules/footer/footer.scss"
+@import "../../pug/includes/modules/footer/footer.scss";
+@import "../../pug/utils/mixins.scss";

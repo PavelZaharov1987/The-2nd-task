@@ -1,0 +1,52 @@
+.rectangle-text p{
+    font-size: 19px;
+    line-height: 29px;
+}
+
+.rectangle-text-bold {
+    font-weight: bold;
+}
+
+.rectangle {
+    margin-bottom: 20px;
+}
+
+.rectangle-color, .rectangle-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.rectangle-color {
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+    margin-right: 40px;
+}
+
+.dark_shade_100 {
+    background: #1F2041;
+}
+
+.dark_shade_75 {
+    background: rgba(31, 32, 65, 0.75);
+}
+
+.dark_shade_50 {
+    background: rgba(31, 32, 65, 0.5);
+}
+
+.dark_shade_25 {
+    background: rgba(31, 32, 65, 0.25);
+}
+
+.dark_shade_5 {
+    background: rgba(31, 32, 65, 0.05);
+}
+
+.purple {
+    background: #BC9CFF;
+} 
+
+.green {
+    background: #6FCF97;
+}
