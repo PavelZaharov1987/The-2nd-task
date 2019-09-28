@@ -1,9 +1,3 @@
-mixin item(title, descr)
-  .item
-    h2.item-title= title
-    p.item-descr= descr
-
-mixin about(title, descr)
-  .about
-    h3.about-title= title
-    p.about-descr= descr
+mixin link(href, name)
+  //- attributes == {class: "btn"}
+  a(class!=attributes.class href=href)= name

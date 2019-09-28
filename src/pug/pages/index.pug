@@ -1,0 +1,12 @@
+extends ../layout/main
+
+block variables
+  - var title = 'index page';
+  - var description = 'index page';
+  - var pageClass = 'index-page';
+  - var link = 'UI_kit.html';
+  - var linkDescription = 'На UI_kit';
+
+block content
+    include ../includes/modules/header/header
+        +link('UI_kit.html', 'На UI_kit')(class="btn")

@@ -4,8 +4,11 @@ block variables
   - var title = 'UI kit page';
   - var description = 'UI kit page';
   - var pageClass = 'UI_kit-page';
+  - var link = 'index.html';
+  - var linkDescription = 'На главную';
 
 block content
     include ../includes/modules/header/header
+      +link('index.html', 'На главную')(class="btn")
     section.colors-type
         .wrapper
