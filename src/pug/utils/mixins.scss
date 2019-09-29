@@ -1,3 +1,8 @@
+.color, .type {
+    display: inline-block;
+    vertical-align: top;
+}
+
 .rectangle-text p{
     font-size: 19px;
     line-height: 29px;
@@ -49,4 +54,44 @@
 
 .green {
     background: #6FCF97;
+}
+
+.text p {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.text p:first-child {
+    margin-right: 30px;
+    text-align: right;
+}
+
+.text p:nth-child(2n) {
+    width: 336px;
+    font-weight: bold;
+}
+
+.type .text:last-child p:last-child {
+    font-weight: normal;
+}
+
+.type .text:first-child {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.type .text:nth-child(3n-1) {
+    font-size: 19px;
+    line-height: 24px;
+}
+
+.type .text:nth-child(3n) {
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+
+.type .text:nth-child(4n) {
+    font-size: 14px;
+    line-height: 24px;
 }

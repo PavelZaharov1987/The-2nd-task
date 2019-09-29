@@ -12,10 +12,16 @@ block content
       +link('index.html', 'На главную')(class="btn")
     section.colors-type
         .wrapper
-          +color('dark_shade_100', 'Dark Shade 100%', '#1F2041')
-          +color('dark_shade_75', 'Dark Shade 75%', '#1F2041')
-          +color('dark_shade_50', 'Dark Shade 50%', '#1F2041')
-          +color('dark_shade_25', 'Dark Shade 25%', '#1F2041')
-          +color('dark_shade_5', 'Dark Shade 5%', '#1F2041')
-          +color('purple', 'Purple', '#BC9CFF')
-          +color('green', 'Green', '#6FCF97')
+          .color
+            +color('dark_shade_100', 'Dark Shade 100%', '#1F2041')
+            +color('dark_shade_75', 'Dark Shade 75%', '#1F2041')
+            +color('dark_shade_50', 'Dark Shade 50%', '#1F2041')
+            +color('dark_shade_25', 'Dark Shade 25%', '#1F2041')
+            +color('dark_shade_5', 'Dark Shade 5%', '#1F2041')
+            +color('purple', 'Purple', '#BC9CFF')
+            +color('green', 'Green', '#6FCF97')
+          .type
+            +text('H1', 'This one is the sub-section or widget title')
+            +text('H2', 'Next one is the item title inside widgets')
+            +text('H3', 'This is a label or CTA text')
+            +text('Body', 'This is the body text which is used for most of the design, like paragraphs, lists, etc.')
