@@ -14,6 +14,7 @@
 
 .rectangle {
     margin-bottom: 20px;
+    color: $dark_shade_100;
 }
 
 .rectangle-color, .rectangle-text {
@@ -29,69 +30,29 @@
 }
 
 .dark_shade_100 {
-    background: #1F2041;
+    background: $dark_shade_100;
 }
 
 .dark_shade_75 {
-    background: rgba(31, 32, 65, 0.75);
+    background: $dark_shade_75;
 }
 
 .dark_shade_50 {
-    background: rgba(31, 32, 65, 0.5);
+    background: $dark_shade_50;
 }
 
 .dark_shade_25 {
-    background: rgba(31, 32, 65, 0.25);
+    background: $dark_shade_25;
 }
 
 .dark_shade_5 {
-    background: rgba(31, 32, 65, 0.05);
+    background: $dark_shade_5;
 }
 
 .purple {
-    background: #BC9CFF;
+    background: $purple;
 } 
 
 .green {
-    background: #6FCF97;
-}
-
-.text p {
-    display: inline-block;
-    vertical-align: top;
-}
-
-.text p:first-child {
-    margin-right: 30px;
-    text-align: right;
-}
-
-.text p:nth-child(2n) {
-    width: 336px;
-    font-weight: bold;
-}
-
-.type .text:last-child p:last-child {
-    font-weight: normal;
-}
-
-.type .text:first-child {
-    font-size: 24px;
-    line-height: 30px;
-}
-
-.type .text:nth-child(3n-1) {
-    font-size: 19px;
-    line-height: 24px;
-}
-
-.type .text:nth-child(3n) {
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-}
-
-.type .text:nth-child(4n) {
-    font-size: 14px;
-    line-height: 24px;
+    background: $green;
 }

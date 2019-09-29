@@ -21,7 +21,23 @@ block content
             +color('purple', 'Purple', '#BC9CFF')
             +color('green', 'Green', '#6FCF97')
           .type
-            +text('H1', 'This one is the sub-section or widget title')
-            +text('H2', 'Next one is the item title inside widgets')
-            +text('H3', 'This is a label or CTA text')
-            +text('Body', 'This is the body text which is used for most of the design, like paragraphs, lists, etc.')
+            .text
+              .text-left
+                p H1
+              .text-right
+                h1 This one is the sub-section or widget title
+            .text
+              .text-left
+                p H2
+              .text-right
+                h2 Next one is the item title inside widgets
+            .text
+              .text-left
+                p H3
+              .text-right
+                h3 This is a label or CTA text
+            .text
+              .text-left
+                p Body
+              .text-right
+                p This is the body text which is used for most of the design, like paragraphs, lists, etc.
