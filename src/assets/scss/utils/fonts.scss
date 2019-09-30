@@ -1,2 +1,7 @@
-// Fonts here
-// see more: https://github.com/vedees/webpack-template/blob/master/README.md#import-js-files
+@font-face {
+	font-family: 'quicksand';
+	src: url('/assets/fonts/quicksand.eot');
+	src: local('☺'), url('/assets/fonts/quicksand.woff') format('woff'), url('/assets/fonts/quicksand.ttf') format('truetype'), url('/assets/fonts/quicksand.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
