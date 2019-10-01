@@ -23,7 +23,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   font-family: $mainFont;
@@ -42,19 +41,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-weight: bold;
+  font-family: quicksand-bold, sans-serif;
   font-size: 24px;
   line-height: 30px;
 }
 
 h2 {
-  font-weight: bold;
+  font-family: quicksand-bold, sans-serif;
   font-size: 19px;
   line-height: 24px;
 }
 
 h3 {
-  font-weight: bold;
+  font-family: Montserrat-bold, sans-serif;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
@@ -111,6 +110,7 @@ section, .section {
 // Modules
 // @import "modules/my-module.scss";
 
+@import "../../pug/includes/modules/header/header.scss";
 @import "../../pug/includes/modules/footer/footer.scss";
 @import "../../pug/utils/mixins.scss";
 @import "../../pug/pages/pages.scss";

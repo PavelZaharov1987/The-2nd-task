@@ -8,10 +8,10 @@ block variables
   - var linkDescription = 'На главную';
 
 block content
-    include ../includes/modules/header/header
-      +link('index.html', 'На главную')(class="btn")
+    +logo
+    +link('index.html', 'На главную')(class="btn")
     section.colors-type
-        .wrapper
+        .wrapper.clearfix
           .color
             +color('dark_shade_100', 'Dark Shade 100%', '#1F2041')
             +color('dark_shade_75', 'Dark Shade 75%', '#1F2041')
