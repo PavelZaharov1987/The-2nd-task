@@ -12,7 +12,12 @@ mixin color(bgc, name, color)
       p.rectangle-text-bold=name
       p=color
 
-//- mixin text(main, description)
-//-   .text
-//-     p=main
-//-     p=description
+mixin field(header, state, type, name)
+  label(for=header)=header
+  p=state
+  input(type=type value=name placeholder=name)
+
+mixin field-hover(header, state, type, name)
+  label(for=header)=header
+  p=state
+  input(class="default" type=type value=name placeholder=name)

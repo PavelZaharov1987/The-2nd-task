@@ -41,3 +41,9 @@ block content
                 p Body
               .text-right
                 p This is the body text which is used for most of the design, like paragraphs, lists, etc.
+    section.form-elements
+      +logo
+      .wrapper
+        +field('text field', 'default', 'text', 'Email')
+        +field-hover('text field', 'hover / focus', 'text', 'This is pretty awesome')
+      
