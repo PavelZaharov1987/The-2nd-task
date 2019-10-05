@@ -13,11 +13,30 @@ mixin color(bgc, name, color)
       p=color
 
 mixin field(header, state, type, name)
-  label(for=header)=header
+  h3
+    label(for=header)=header
   p=state
   input(type=type value=name placeholder=name)
 
 mixin field-hover(header, state, type, name)
-  label(for=header)=header
+  h3
+    label(for=header)=header
   p=state
   input(class="default" type=type value=name placeholder=name)
+
+mixin dropdown(dropdownName, state, option1, option2, option3)
+  div(class=dropdownName)
+    h3
+      label(for=dropdownName)=dropdownName
+    p=state
+    ul
+      li(data-value='1')=option1
+      li(data-value='2')=option2
+      li(data-value='3')=option3
+
+mixin date-dropdown(title_left, title_rigth)
+    form.form.form-date-dropdown__container
+        label.form__title.form-date-dropdown__left= title_left
+            input(autocomplete="off" type="text" name="data" placeholder="ДД.ММ.ГГГГ").form__field.form-date-dropdown
+        label.form__title.form-date-dropdown__right= title_rigth
+            input(autocomplete="off" type="text" name="data" placeholder="ДД.ММ.ГГГГ").form__field.form-date-dropdown

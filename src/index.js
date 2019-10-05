@@ -1,5 +1,12 @@
+//jquery
+import $ from 'jquery';
+window.jquery = require('jquery');
+
 // JS
 import './js/'
+
+//mixins.js
+import './pug/utils/mixins'
 
 // SCSS
 import './assets/scss/main.scss'
