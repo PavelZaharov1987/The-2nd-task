@@ -1,6 +1,6 @@
 //jquery
-import $ from 'jquery';
-window.jquery = require('jquery');
+// import $ from 'jquery';
+// window.jquery = require('jquery');
 
 // JS
 import './js/'
@@ -13,6 +13,8 @@ import './assets/scss/main.scss'
 
 // CSS (example)
 // import './assets/css/main.css'
+
+$('.title').html('Some text!');
 
 // Vue.js
 window.Vue = require('vue')
