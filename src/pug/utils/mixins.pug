@@ -16,27 +16,37 @@ mixin field(header, state, type, name)
   h3
     label(for=header)=header
   p=state
-  input(type=type value=name placeholder=name)
+  input(type=type autocomplete="off" value=name placeholder=name)
 
 mixin field-hover(header, state, type, name)
   h3
     label(for=header)=header
   p=state
-  input(class="default" type=type value=name placeholder=name)
+  input(class="default" autocomplete="off" type=type value=name placeholder=name)
 
-mixin dropdown(dropdownName, state, option1, option2, option3)
+mixin dropdown(dropdownName, state, about, option1, option2, option3)
+  h3=dropdownName
+  p=state
   div(class=dropdownName)
-    h3
-      label(for=dropdownName)=dropdownName
-    p=state
+    label(for=dropdownName data-value="")=about
     ul
       li(data-value='1')=option1
       li(data-value='2')=option2
       li(data-value='3')=option3
 
 mixin date-dropdown(title_left, title_rigth)
-    form.form.form-date-dropdown__container
+  .form-date
+    .form-date-dropdown
+      h3
         label.form__title.form-date-dropdown__left= title_left
-            input(autocomplete="off" type="text" name="data" placeholder="ДД.ММ.ГГГГ").form__field.form-date-dropdown
+      input(autocomplete="off" type="text" name="data" placeholder="ДД.ММ.ГГГГ").form__field
+    .form-date-dropdown
+      h3
         label.form__title.form-date-dropdown__right= title_rigth
-            input(autocomplete="off" type="text" name="data" placeholder="ДД.ММ.ГГГГ").form__field.form-date-dropdown
+      input(autocomplete="off" type="text" name="data" placeholder="ДД.ММ.ГГГГ").form__field
+
+mixin send-field(header, name, placeholder, send)
+  h3
+    label(for=header)=header
+  input(autocomplete="off" type="text" value=name placeholder=placeholder)
+  button=send

@@ -46,6 +46,10 @@ block content
       .wrapper
         +field('text field', 'default', 'text', 'Email')
         +field-hover('text field', 'hover / focus', 'text', 'This is pretty awesome')
-        +dropdown('dropdown', 'default', '1', '2', '3')
-        div.title
+        +dropdown('dropdown', 'default', 'Сколько гостей', '1', '2', '3')
+        +field('masked text field', 'default', 'data', 'ДД.ММ.ГГГГ')
+        +date-dropdown('date dropdown', 'date dropdown')
+        +send-field('filter date dropdown', "", '19 авг - 23 авг', '1')
+        +send-field('subscription text field', "", 'Email', '2')
+        //- div.title
       
