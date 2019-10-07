@@ -48,3 +48,17 @@
 .form-elements {
     padding: 143px 141px 147px 141px;
 }
+
+.form-field {
+    margin-bottom: 20px;
+    position: relative;
+    width: 320px;
+}
+
+.form-default {
+    position: absolute;
+    top: -7px;
+    right: 0;
+    text-transform: uppercase;
+    color: $dark_shade_50;
+}
