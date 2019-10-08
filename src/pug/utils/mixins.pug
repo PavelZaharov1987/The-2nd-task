@@ -51,3 +51,8 @@ mixin send-field(header, name, placeholder, send, type)
     label(for=header)=header
   input(autocomplete="off" type="text" value=name placeholder=placeholder)
   button.form-btn(type=type)=send
+
+mixin checkbox(name)
+  label.checkbox-container=name
+    input(type="checkbox")
+    span.checkmark
