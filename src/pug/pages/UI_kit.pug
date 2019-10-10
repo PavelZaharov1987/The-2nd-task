@@ -63,6 +63,19 @@ block content
         .form-field
           +send-field('subscription text field', "", 'Email', '2', 'btn')
         .form-checkbox
+          button.dropbtn 
+            h3 expandable checkbox list
+            i.class
+          .dropdown-content
+            +checkbox('Завтраки')
+            +checkbox('Письменный стол')
+            +checkbox('Стул для кормления')
+            +checkbox('Кроватка')
+            +checkbox('Телевизор')
+            +checkbox('Шампунь')
+            +checkbox('Телевизор')
+            +checkbox('Шампунь')
+        .form-checkbox
           +checkbox('Завтраки')
           +checkbox('Письменный стол')
           +checkbox('Стул для кормления')
