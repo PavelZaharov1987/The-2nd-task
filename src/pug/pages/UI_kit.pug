@@ -52,20 +52,20 @@ block content
           +field-hover('text field', 'text', 'This is pretty awesome')
         .form-field
           p.form-default default
-          +dropdown('dropdown', 'Сколько гостей', '1', '2', '3', '/')
+          +dropdown('dropdown', 'Сколько гостей', '1', '2', '3')
         .form-field
           p.form-default default
           +field('masked text field', 'data', 'ДД.ММ.ГГГГ')
         .form-field
-          +date-dropdown('date dropdown', 'date dropdown', '/')
+          +date-dropdown('date dropdown', 'date dropdown')
         .form-field
-          +send-field('filter date dropdown', "", '19 авг - 23 авг', '1', 'submit')
+          +send-field('filter date dropdown', "", '19 авг - 23 авг', 'submit', 'expand_more')
         .form-field
-          +send-field('subscription text field', "", 'Email', '2', 'btn')
+          +send-field('subscription text field', "", 'Email', 'btn', 'arrow_forward')
         .form-checkbox
           button.dropbtn 
             h3 expandable checkbox list
-            i.class
+            i.material-icons.md-dark expand_more
           .dropdown-content
             +checkbox('Завтраки')
             +checkbox('Письменный стол')
