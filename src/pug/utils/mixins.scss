@@ -233,3 +233,35 @@ input {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
+.icon-text-list {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    font-size: 48px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.icon-text {
+    height: 48px;
+    margin-left: 58px;
+}
+
+.icon-text h4 {
+    font-family: Montserrat-bold, sans-serif;
+}
+
+.line {
+    margin-top: 17px;
+    margin-bottom: 23px;
+    width: 280px;
+    height: 1px;
+    background: $dark_shade_10;
+}

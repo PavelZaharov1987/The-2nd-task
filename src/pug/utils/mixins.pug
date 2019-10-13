@@ -63,3 +63,10 @@ mixin checkbox(name)
   label.checkbox-container=name
     input(type="checkbox")
     span.checkmark
+
+mixin icon-text-list(name, header, text)
+  .icon.material-icons.md-icon=name
+  .icon-text
+    h4=header
+    p=text
+  .line
