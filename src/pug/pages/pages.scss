@@ -49,6 +49,16 @@
     padding: 143px 141px 147px 141px;
 }
 
+.flex {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+// .form-elements-left, .form-elements-center, .form-elements-right {
+//     display:flex;
+//     flex-wrap:wrap;
+// }
+
 .form-field {
     margin-bottom: 20px;
     position: relative;

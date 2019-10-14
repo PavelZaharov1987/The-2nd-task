@@ -43,30 +43,40 @@ block content
                 p This is the body text which is used for most of the design, like paragraphs, lists, etc.
     section.form-elements
       +logo
-      .wrapper
-        .form-field
-          p.form-default default
-          +field('text field', 'text', 'Email')
-        .form-field
-          p.form-default hover / focus
-          +field-hover('text field', 'text', 'This is pretty awesome')
-        .form-field
-          p.form-default default
-          +dropdown('dropdown', 'Сколько гостей', '1', '2', '3')
-        .form-field
-          p.form-default default
-          +field('masked text field', 'data', 'ДД.ММ.ГГГГ')
-        .form-field
-          +date-dropdown('date dropdown', 'date dropdown')
-        .form-field-default
-          +send-field('filter date dropdown', "", '19 авг - 23 авг', 'submit', 'expand_more')
-        .form-field-default
-          +send-field('subscription text field', "", 'Email', 'btn', 'arrow_forward')
-        .form-checkbox
-          button.dropbtn 
-            h3 expandable checkbox list
-            i.material-icons.md-dark expand_more
-          .dropdown-content
+      .wrapper.flex
+        .form-elements-left
+          .form-field
+            p.form-default default
+            +field('text field', 'text', 'Email')
+          .form-field
+            p.form-default hover / focus
+            +field-hover('text field', 'text', 'This is pretty awesome')
+          .form-field
+            p.form-default default
+            +dropdown('dropdown', 'Сколько гостей', '1', '2', '3')
+          .form-field
+            p.form-default default
+            +field('masked text field', 'data', 'ДД.ММ.ГГГГ')
+          .form-field
+            +date-dropdown('date dropdown', 'date dropdown')
+          .form-field-default
+            +send-field('filter date dropdown', "", '19 авг - 23 авг', 'submit', 'expand_more')
+          .form-field-default
+            +send-field('subscription text field', "", 'Email', 'btn', 'arrow_forward')
+          .form-checkbox
+            button.dropbtn 
+              h3 expandable checkbox list
+              i.material-icons.md-dark expand_more
+            .dropdown-content
+              +checkbox('Завтраки')
+              +checkbox('Письменный стол')
+              +checkbox('Стул для кормления')
+              +checkbox('Кроватка')
+              +checkbox('Телевизор')
+              +checkbox('Шампунь')
+              +checkbox('Телевизор')
+              +checkbox('Шампунь')
+          .form-checkbox
             +checkbox('Завтраки')
             +checkbox('Письменный стол')
             +checkbox('Стул для кормления')
@@ -75,17 +85,13 @@ block content
             +checkbox('Шампунь')
             +checkbox('Телевизор')
             +checkbox('Шампунь')
-        .form-checkbox
-          +checkbox('Завтраки')
-          +checkbox('Письменный стол')
-          +checkbox('Стул для кормления')
-          +checkbox('Кроватка')
-          +checkbox('Телевизор')
-          +checkbox('Шампунь')
-          +checkbox('Телевизор')
-          +checkbox('Шампунь')
-        .icon-text-list
-          +icon-text-list('insert_emoticon', 'Комфорт', 'Шумопоглощающие стены')
-          +icon-text-list('location_city', 'Удобство', 'Окно в каждой из спален')
+          .icon-text-list
+            +icon-text-list('insert_emoticon', 'Комфорт', 'Шумопоглощающие стены')
+            +icon-text-list('location_city', 'Удобство', 'Окно в каждой из спален')
+        .form-elements-center
+          .form-field
+            h3 checkbox buttons
+            +checkbox2('Можно курить')
+        .form-elements-right
         //- div.title
       

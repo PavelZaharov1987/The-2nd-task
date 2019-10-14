@@ -70,3 +70,7 @@ mixin icon-text-list(name, header, text)
     h4=header
     p=text
   .line
+
+mixin checkbox2(name)
+  input(type="checkbox").checkbox#checkbox-id
+  label(for="checkbox-id").checkbox-button=name
