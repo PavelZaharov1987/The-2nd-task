@@ -1,0 +1,10 @@
+mixin dropdown(about, option1, option2, option3)
+  div.dropdown
+    label(data-value="")=about
+    button.form-btn(type="button")
+      i.material-icons.md-dark 
+        | expand_more
+    ul
+      li(data-value='1')=option1
+      li(data-value='2')=option2
+      li(data-value='3')=option3
