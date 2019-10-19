@@ -1,3 +1,3 @@
-mixin btn(type, class, name)
+mixin btn(myclass, type, name)
     button.form-btn(type=type)
-        i.material-icons(class=class)=name
+        i(class=myclass).material-icons=name

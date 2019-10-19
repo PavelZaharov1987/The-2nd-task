@@ -1,6 +1,3 @@
-mixin logo()
-  img.header(src='assets/img/Group.png')
-
 mixin link(href, name)
   //- attributes == {class: "btn"}
   a(class!=attributes.class href=href)= name
@@ -12,52 +9,10 @@ mixin color(bgc, name, color)
       p.rectangle-text-bold=name
       p=color
 
-mixin field(header, type, name)
-  h3.form-title
-    label(for=header)=header
-  input(type=type autocomplete="off" placeholder=name)
-
 mixin field-hover(header, type, name)
   h3.form-title
     label(for=header)=header
   input(class="default" autocomplete="off" type=type placeholder=name)
-
-mixin dropdown(dropdownName, about, option1, option2, option3)
-  h3.form-title=dropdownName
-  div(class=dropdownName)
-    label(for=dropdownName data-value="")=about
-    button.form-btn(type=type)
-      i.material-icons.md-dark 
-        | expand_more
-    ul
-      li(data-value='1')=option1
-      li(data-value='2')=option2
-      li(data-value='3')=option3
-    
-
-mixin date-dropdown(title_left, title_rigth)
-  .form-date
-    .form-date-dropdown
-      h3.form-title
-        label.form__title.form-date-dropdown__left= title_left
-      input(autocomplete="off" type="text" name="data" placeholder="ДД.ММ.ГГГГ")
-      button.form-btn(type=type)
-        i.material-icons.md-dark 
-          | expand_more
-    .form-date-dropdown
-      h3.form-title
-        label.form__title.form-date-dropdown__right= title_rigth
-      input(autocomplete="off" type="text" name="data" placeholder="19.08.2019")
-      button.form-btn(type=type)
-        i.material-icons.md-dark 
-          | expand_more
-
-mixin send-field(header, name, placeholder, type, icon)
-  h3.form-title
-    label(for=header)=header
-  input(autocomplete="off" type="text" value=name placeholder=placeholder)
-  button.form-btn(type=type)
-    i.material-icons.md-dark=icon
 
 mixin checkbox(name)
   label.checkbox-container=name

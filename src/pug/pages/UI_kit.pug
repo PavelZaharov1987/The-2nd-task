@@ -1,5 +1,11 @@
 extends ../layout/main
 
+include ../includes/components/logo/logo
+include ../includes/components/btn/btn
+include ../includes/components/field/field
+include ../includes/components/dropdown/dropdown
+include ../includes/components/date-dropdown/date-dropdown
+
 block variables
   - var title = 'UI kit page';
   - var description = 'UI kit page';
@@ -47,22 +53,29 @@ block content
         .form-elements-left
           .form-field
             p.form-default default
-            +field('text field', 'text', 'Email')
+            h3.form-title text field
+            +field('text', 'Email')
           .form-field
             p.form-default hover / focus
             +field-hover('text field', 'text', 'This is pretty awesome')
           .form-field
             p.form-default default
-            +dropdown('dropdown', 'Сколько гостей', '1', '2', '3')
+            h3.form-title dropdown
+            +dropdown('Сколько гостей', '1', '2', '3')
           .form-field
             p.form-default default
-            +field('masked text field', 'data', 'ДД.ММ.ГГГГ')
+            h3.form-title masked text field
+            +field('text', 'ДД.ММ.ГГГГ')
           .form-field
             +date-dropdown('date dropdown', 'date dropdown')
           .form-field-default
-            +send-field('filter date dropdown', "", '19 авг - 23 авг', 'submit', 'expand_more')
+            h3.form-title filter date dropdown
+            +field('text', '19 авг - 23 авг')
+            +btn('btn-more', 'button', 'expand_more')
           .form-field-default
-            +send-field('subscription text field', "", 'Email', 'btn', 'arrow_forward')
+            h3.form-title subscription text field
+            +field('text', 'Email')
+            +btn('btn-arrow', 'button', 'arrow_forward')
           .form-checkbox
             button.dropbtn 
               h3 expandable checkbox list
