@@ -1,3 +1,5 @@
+@import "../../../../assets/scss/utils/vars.scss";
+
 .icon {
     position: absolute;
     width: 48px;
@@ -24,4 +26,10 @@
     width: 280px;
     height: 1px;
     background: $dark_shade_10;
+}
+
+.material-icons.icon-color { 
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

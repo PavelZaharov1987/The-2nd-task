@@ -5,6 +5,10 @@ include ../includes/components/btn/btn
 include ../includes/components/field/field
 include ../includes/components/dropdown/dropdown
 include ../includes/components/date-dropdown/date-dropdown
+include ../includes/components/checkbox/checkbox
+include ../includes/components/checkbox-list/checkbox-list
+include ../includes/components/icon-text-list/icon-text-list
+include ../includes/components/radio/radio
 
 block variables
   - var title = 'UI kit page';
@@ -77,19 +81,9 @@ block content
             +field('text', 'Email')
             +btn('btn-arrow', 'button', 'arrow_forward')
           .form-checkbox
-            button.dropbtn 
-              h3 expandable checkbox list
-              i.material-icons.md-dark expand_more
-            .dropdown-content
-              +checkbox('Завтраки')
-              +checkbox('Письменный стол')
-              +checkbox('Стул для кормления')
-              +checkbox('Кроватка')
-              +checkbox('Телевизор')
-              +checkbox('Шампунь')
-              +checkbox('Телевизор')
-              +checkbox('Шампунь')
+            +checkbox-list('expandable checkbox list')
           .form-checkbox
+            +checkbox-list('expandable checkbox list')
             +checkbox('Завтраки')
             +checkbox('Письменный стол')
             +checkbox('Стул для кормления')
@@ -105,6 +99,12 @@ block content
           .form-field
             h3 checkbox buttons
             +checkbox('Можно курить')
+            +checkbox('Можно с питомцами')
+            +checkbox('Можно пригласить гостей (до 10 человек)')
+          .form-field
+            h3 radio buttons
+            +radio('Мужчина')
+            +radio('Женщина')
         .form-elements-right
         //- div.title
       

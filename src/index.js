@@ -8,6 +8,10 @@ import './pug/includes/components/btn'
 import './pug/includes/components/field'
 import './pug/includes/components/dropdown'
 import './pug/includes/components/date-dropdown'
+import './pug/includes/components/checkbox'
+import './pug/includes/components/checkbox-list'
+import './pug/includes/components/icon-text-list'
+import './pug/includes/components/radio'
 
 // SCSS
 import './assets/scss/main.scss'

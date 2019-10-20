@@ -1,0 +1,16 @@
+include ./../btn/btn
+include ./../checkbox/checkbox
+
+mixin checkbox-list(name)
+    button.dropbtn 
+        h3=name
+        +btn('btn-more', 'button', 'expand_more')
+    .dropdown-content
+        +checkbox('Завтраки')
+        +checkbox('Письменный стол')
+        +checkbox('Стул для кормления')
+        +checkbox('Кроватка')
+        +checkbox('Телевизор')
+        +checkbox('Шампунь')
+        +checkbox('Телевизор')
+        +checkbox('Шампунь')
