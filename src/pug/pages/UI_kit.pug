@@ -9,6 +9,8 @@ include ../includes/components/checkbox/checkbox
 include ../includes/components/checkbox-list/checkbox-list
 include ../includes/components/icon-text-list/icon-text-list
 include ../includes/components/radio/radio
+include ../includes/components/toggle-input/toggle-input
+include ../includes/components/star/star
 
 block variables
   - var title = 'UI kit page';
@@ -105,6 +107,14 @@ block content
             h3 radio buttons
             +radio('Мужчина')
             +radio('Женщина')
+          .form-field
+            h3 toggle
+            +toggle('Получать спецпредложения')
+            +toggle('Получать спецпредложения')
+          .form-field
+            h3 like button
+          .form-field
+            h3 rate button
         .form-elements-right
         //- div.title
       

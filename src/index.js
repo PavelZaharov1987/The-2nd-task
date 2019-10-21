@@ -12,6 +12,8 @@ import './pug/includes/components/checkbox'
 import './pug/includes/components/checkbox-list'
 import './pug/includes/components/icon-text-list'
 import './pug/includes/components/radio'
+import './pug/includes/components/toggle-input'
+import './pug/includes/components/star'
 
 // SCSS
 import './assets/scss/main.scss'
