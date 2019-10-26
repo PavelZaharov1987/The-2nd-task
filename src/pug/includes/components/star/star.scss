@@ -1,34 +1,15 @@
-.star-rating{
-	font-size: 0;
-}
-.star-rating__wrap{
-	display: inline-block;
-	font-size: 1rem;
-}
-.star-rating__wrap:after{
-	content: "";
-	display: table;
-	clear: both;
-}
 .star-rating__ico{
 	float: right;
 	padding-left: 2px;
 	cursor: pointer;
-	// color: #FFB300;
+	color: #FFB300;
 }
 .star-rating__ico:last-child{
 	padding-left: 0;
 }
 
 .star-rating__ico:before {
-    content: "\2606";
-    width: 24px;
-    height: 24px;
-    font-size: 24px;
-    line-height: 20px;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); 
-	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+	content: "\e83a";
 }
 
 .star-rating__input{
@@ -38,5 +19,5 @@
 .star-rating__ico:hover ~ .star-rating__ico:before,
 .star-rating__input:checked ~ .star-rating__ico:before
 {
-	content: "\2605";
+	content: "\e838";
 }
