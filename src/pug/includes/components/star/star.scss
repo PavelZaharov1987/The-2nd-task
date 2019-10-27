@@ -1,8 +1,25 @@
+.star-rating{
+	font-size: 0;
+}
+.star-rating__wrap{
+	display: inline-block;
+}
+.star-rating__wrap:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
 .star-rating__ico{
+	width: 24px;
+	height: 24px;
 	float: right;
-	padding-left: 2px;
 	cursor: pointer;
-	color: #FFB300;
+	font-size: 24px;
+	line-height: 20px;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); 
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 .star-rating__ico:last-child{
 	padding-left: 0;
@@ -20,4 +37,7 @@
 .star-rating__input:checked ~ .star-rating__ico:before
 {
 	content: "\e838";
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); 
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
