@@ -28,7 +28,7 @@
 /* Create a custom radio button */
 .radio-checkmark {
     position: absolute;
-    top: 0;
+    top: 2px;
     left: 0;
     height: 20px;
     width: 20px;
@@ -46,7 +46,7 @@
     color: $dark_shade_75;
 }
 
-.radio-container input:checked {
+.radio-container-checked {
     color: $dark_shade_75;
 }
   
