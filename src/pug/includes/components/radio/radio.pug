@@ -1,4 +1,4 @@
-mixin radio(name)
-  label.radio-container=name
-    input(type="radio" name="radio")
+mixin radio(id, name)
+  label(class=id).radio-container=name
+    input(type="radio" name="radio" id=id)
     span.radio-checkmark

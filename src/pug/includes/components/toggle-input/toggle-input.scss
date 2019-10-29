@@ -1,14 +1,16 @@
+@import "../../../../assets/scss/utils/vars.scss";
+
 .checkbox-toggle {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 40px;
+    height: 20px;
 }
 
 .checkbox-toggle-text {
-    padding-top: 5px;
     position: absolute;
-    left: 70px;
+    top: -2px;
+    left: 50px;
     width: 210px;
 }
   
@@ -25,7 +27,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #ffffff;
+    border: 1px solid $dark_shade_25;
+    border-radius: 10px;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -33,34 +37,23 @@
 .checkbox-toggle-slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 12px;
+    width: 12px;
     left: 4px;
-    bottom: 4px;
-    background-color: white;
+    bottom: 3px;
+    background-color: $dark_shade_25;
     -webkit-transition: .4s;
     transition: .4s;
+    border-radius: 50%;
 }
   
 input:checked + .checkbox-toggle-slider {
-    background-color: #2196F3;
-}
-  
-input:focus + .checkbox-toggle-slider {
-    box-shadow: 0 0 1px #2196F3;
+    border-color: $purple;
 }
   
 input:checked + .checkbox-toggle-slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-}
-  
-/* Rounded sliders */
-.checkbox-toggle-slider.round {
-    border-radius: 34px;
-}
-  
-.checkbox-toggle-slider.round:before {
-    border-radius: 50%;
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 }
