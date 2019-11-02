@@ -14,6 +14,7 @@ import './pug/includes/components/icon-text-list'
 import './pug/includes/components/radio'
 import './pug/includes/components/toggle-input'
 import './pug/includes/components/star'
+import './pug/includes/components/like-btn'
 
 // SCSS
 import './assets/scss/main.scss'

@@ -11,6 +11,7 @@ include ../includes/components/icon-text-list/icon-text-list
 include ../includes/components/radio/radio
 include ../includes/components/toggle-input/toggle-input
 include ../includes/components/star/star
+include ../includes/components/like-btn/like-btn
 
 block variables
   - var title = 'UI kit page';
@@ -113,6 +114,8 @@ block content
             +toggle('Получать спецпредложения')
           .form-field
             h3 like button
+            +like('2')
+            +like('12', 'active', 'like-btn-icon-active', 'active')
           .form-field
             h3 rate button
             +star()
