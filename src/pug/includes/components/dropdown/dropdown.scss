@@ -26,29 +26,60 @@
 .dropdown ul {
     list-style: none;
     position: absolute;
+    left: -1px;
+    top: 43px;
     width: inherit;
+    z-index: 1;
 }
   
 .dropdown ul li {
     padding: 0px 16px;
-    color: #343838;
+    color: $dark_shade_100;
+    text-transform: uppercase;
     height: 0px;
     overflow: hidden;
     cursor: pointer;
     transition: height 0.1s linear 0s;
+    background-color: #fff;
+    font-family: 'Montserrat-bold', sans-serif;
+    font-size: 12px;
+    line-height: 15px;
 }
   
 .dropdown ul li:hover,
 .dropdown ul li.selected {
-    background: #00B4CC;
-    color: #FAFAFA;
-    border-left: 2px solid blue !important;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    color: $dark_shade_50;
+}
+
+.dropdown.open {
+    border-radius: 4px 4px 0 0;
 }
   
 .dropdown.open ul li {
     padding: 8px 16px;
-    height: 34px;
-    border: 1px solid gray;
+    height: 40px;
+    border: 1px solid $dark_shade_50;
     border-top: none;
+    border-bottom: none; 
+}
+
+.dropdown.open ul li:last-child {
+    border-bottom: 1px solid $dark_shade_50;
+    border-radius: 0 0 4px 4px;
+}
+
+.number, .minus, .plus, .count, .count-text {
+    display: inline-block;
+}
+
+.count {
+    width: 32px;
+    height: 30px;
+}
+
+.minus, .plus {
+    width: 30px;
+    height: 30px;
+    border: 1px solid $dark_shade_25;
+    border-radius: 22px;
 }

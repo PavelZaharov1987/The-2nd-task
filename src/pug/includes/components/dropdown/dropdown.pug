@@ -5,6 +5,11 @@ mixin dropdown(about, option1, option2, option3)
     label(for='dropdown' data-value="")=about
     +btn('btn-more', 'button', 'expand_more')
     ul
-      li(data-value='1')=option1
+      li(data-value='1')
+        p.count-text=option1
+        .number 
+          span.minus -
+          input(type="text" value="0").count
+          span.plus +
       li(data-value='2')=option2
-      li(data-value='3')=option3
+      li(data-value='3')=option3 
