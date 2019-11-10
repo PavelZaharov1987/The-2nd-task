@@ -2,6 +2,9 @@
 
 .dropdown {
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 320px;
     height: 44px;
     border: 1px solid $dark_shade_25;
@@ -33,6 +36,9 @@
 }
   
 .dropdown ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 0px 16px;
     color: $dark_shade_100;
     text-transform: uppercase;
@@ -68,18 +74,41 @@
     border-radius: 0 0 4px 4px;
 }
 
-.number, .minus, .plus, .count, .count-text {
-    display: inline-block;
+.dropdown-quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 92px;
 }
 
-.count {
-    width: 32px;
-    height: 30px;
+.dropdown-quantity input {
+    padding: 0;
+    text-align: center;
+    border: none;
+    user-select: none;
+    cursor: context-menu;
 }
 
-.minus, .plus {
-    width: 30px;
+.dropdown-quantity-button {
+    width: 83px;
     height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid $dark_shade_25;
-    border-radius: 22px;
+    border-radius: 15px;
+    color: $dark_shade_50;
+    box-sizing: border-box;
+    cursor: pointer;
+    user-select: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -webkit-appearance: textfield;
 }
