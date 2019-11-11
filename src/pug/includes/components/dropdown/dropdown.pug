@@ -1,6 +1,6 @@
 include ./../btn/btn
 
-mixin dropdown(about, option1, option2, option3)
+mixin dropdown(about, option1, option2, option3, controls = fasle)
   div.dropdown
     label(for='dropdown' data-value="")=about
     +btn('btn-more', 'button', 'expand_more')
@@ -13,4 +13,8 @@ mixin dropdown(about, option1, option2, option3)
           input(type="number" min="0" max="9" step="1" value="0")
       li(data-value='3')=option3
         .dropdown-quantity
-          input(type="number" min="0" max="9" step="1" value="0") 
+          input(type="number" min="0" max="9" step="1" value="0")
+      if controls
+        li.dropdown-controls
+          button(type="button").clear-quantity-invisible очистить
+          button(type="button").apply-quantity применить 

@@ -11,8 +11,9 @@ $(function() {
     // });
     
     $('.dropdown').on('click', function() {
-        $(this).addClass('open');
+      $(this).addClass('open');
     });
+  
 })
 
 $('<div class="dropdown-quantity-button quantity-down">-</div>').insertBefore('.dropdown-quantity input');
@@ -66,6 +67,26 @@ $('.dropdown-quantity').each(function() {
       spinner.find("input").val(newVal);
       spinner.find("input").trigger("change");
       opacity();
+  });
+
+  $('input[value]').change(function() {
+    var count = 0;
+    $('input[type="number"]').each(function() {	
+    
+      count += parseInt($(this).val());
+      
+      if (count > 0){
+        $('.clear-quantity-invisible').addClass('clear-quantity')
+      } else {
+        $('.clear-quantity-invisible').removeClass('clear-quantity')
+      };
+    });
+    
+    console.log(count);
+  });
+
+  $('.apply-quantity').click(function () {
+    $('.dropdown').removeClass('open');
   });
 
 });
