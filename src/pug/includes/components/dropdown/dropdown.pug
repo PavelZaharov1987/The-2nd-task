@@ -4,7 +4,7 @@ mixin dropdown(about, option1, option2, option3, controls = fasle)
   div.dropdown
     label(for='dropdown' data-value="")=about
     +btn('btn-more', 'button', 'expand_more')
-    ul
+    ul.quantity
       li(data-value='1')=option1
         .dropdown-quantity
           input(type="number" min="0" max="9" step="1" value="0")

@@ -10,10 +10,23 @@ $(function() {
     //   $(this).addClass('selected');
     // });
     
-    $('.dropdown').on('click', function() {
+    // $('.dropdown').on('click', function() {
+    //   $(this).addClass('open');
+    // });
+    $('.dropdown').click(function () {
+      $('.quantity').slideDown(400);
       $(this).addClass('open');
     });
-  
+    $('.apply-quantity').click(function () {
+      $('.quantity').slideUp({
+        duration: 400,
+        complete: function(){ // callback
+          $('.quantity').stop(true, true);
+        }
+      });
+      $('.dropdown').removeClass('open');
+    });
+      
 })
 
 $('<div class="dropdown-quantity-button quantity-down">-</div>').insertBefore('.dropdown-quantity input');
@@ -85,9 +98,7 @@ $('.dropdown-quantity').each(function() {
     console.log(count);
   });
 
-  $('.apply-quantity').click(function () {
-    $('.dropdown').removeClass('open');
-  });
+  
 
 });
 
