@@ -1,5 +1,7 @@
 import './dropdown.scss';
 
+
+
 $(function() {
     // $('.dropdown ul li').on('click', function() {
     //   var label = $(this).parent().parent().children('label');
@@ -18,12 +20,7 @@ $(function() {
       $(this).addClass('open');
     });
     $('.apply-quantity').click(function () {
-      $('.quantity').slideUp({
-        duration: 400,
-        complete: function(){ // callback
-          $('.quantity').stop(true, true);
-        }
-      });
+      $('.quantity').slideUp(400);
       $('.dropdown').removeClass('open');
     });
       
@@ -89,16 +86,23 @@ $('.dropdown-quantity').each(function() {
       count += parseInt($(this).val());
       
       if (count > 0){
-        $('.clear-quantity-invisible').addClass('clear-quantity')
+        $('.clear-quantity-invisible').addClass('clear-quantity');
+        if (count < 5) {
+          $('.dropdown').find('label').html(count == 1 ? count + ' гость' : count + ' гостя');
+        } else {
+          $('.dropdown').find('label').html(count + ' гостей');
+        }
+        $('.clear-quantity-invisible').click(function () {
+          count = 0;
+          $('input[type="number"]').val(count);
+          $('.dropdown').find('label').text('Сколько гостей');
+        }); 
       } else {
-        $('.clear-quantity-invisible').removeClass('clear-quantity')
+        $('.clear-quantity-invisible').removeClass('clear-quantity');
+        $('.dropdown').find('label').text('Сколько гостей');
       };
     });
-    
     console.log(count);
   });
-
-  
-
 });
 
