@@ -94,3 +94,15 @@
 .form-elements-center .form-field {
     margin-bottom: 40px;
 }
+
+.form-elements-center {
+    padding-left: 132px;
+    .form-field-default {
+        width: 222px;
+    }
+}
+
+.ns {
+	position: relative;
+	width: 266px;
+}

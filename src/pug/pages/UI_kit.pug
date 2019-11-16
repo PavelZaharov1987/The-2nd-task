@@ -12,6 +12,7 @@ include ../includes/components/radio/radio
 include ../includes/components/toggle-input/toggle-input
 include ../includes/components/star/star
 include ../includes/components/like-btn/like-btn
+include ../includes/components/range-slider/range-slider
 
 block variables
   - var title = 'UI kit page';
@@ -99,7 +100,7 @@ block content
             +icon-text-list('insert_emoticon', 'Комфорт', 'Шумопоглощающие стены')
             +icon-text-list('location_city', 'Удобство', 'Окно в каждой из спален')
         .form-elements-center
-          .form-field
+          .form-field-default
             h3 checkbox buttons
             +checkbox('Можно курить')
             +checkbox('Можно с питомцами')
@@ -120,5 +121,7 @@ block content
             h3 rate button
             +star()
         .form-elements-right
+          .ns
+            +range-slider('range slider')
         //- div.title
       

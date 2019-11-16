@@ -15,6 +15,7 @@ import './pug/includes/components/radio'
 import './pug/includes/components/toggle-input'
 import './pug/includes/components/star'
 import './pug/includes/components/like-btn'
+import './pug/includes/components/range-slider'
 
 // SCSS
 import './assets/scss/main.scss'

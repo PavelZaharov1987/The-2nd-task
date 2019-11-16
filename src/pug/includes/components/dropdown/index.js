@@ -95,6 +95,7 @@ $('.dropdown-quantity').each(function() {
         $('.clear-quantity-invisible').click(function () {
           count = 0;
           $('input[type="number"]').val(count);
+          $('.clear-quantity-invisible').removeClass('clear-quantity');
           $('.dropdown').find('label').text('Сколько гостей');
         }); 
       } else {
