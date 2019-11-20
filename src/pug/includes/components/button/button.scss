@@ -1,0 +1,59 @@
+@import "../../../../assets/scss/utils/vars.scss";
+
+.main-btn {
+    width: 99px;
+    height: 44px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    h3 {
+        color: #ffffff;
+    } 
+}
+
+.focus {
+    opacity: 0.5;
+}
+
+.main-btn:focus {
+    opacity: 0.5;
+}
+
+.main-btn-border {
+    width: 99px;
+    height: 44px;
+    border-radius: 22px;
+    background-color: #fff;
+    border: 1px solid $purple;
+    h3 {
+        color: $purple;
+    }
+}
+
+.main-btn-border:focus {
+    opacity: 0.5;
+} 
+
+.clear-quantity-invisible h3{
+    color: $dark_shade_50;
+	visibility: visible;    
+}
+
+.apply-quantity h3{
+    color: $purple;    
+}
+
+.main-btn-start {
+    width: 100%;
+    height: 44px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    h3 {
+        color: #ffffff;
+    }
+}
+
+.main-btn-start ~ .form-btn .material-icons.btn-arrow {
+    background: #ffffff; 
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}

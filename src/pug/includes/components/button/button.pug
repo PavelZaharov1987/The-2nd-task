@@ -1,0 +1,34 @@
+include ./../btn/btn
+
+mixin button-solid(focus = false)
+    if (focus)
+        button.main-btn.focus
+            h3 click me
+    else
+        button.main-btn
+            h3 click me
+
+mixin button-border(focus = false)
+    if (focus)
+        button.main-btn-border.focus
+            h3 click me
+    else
+        button.main-btn-border
+            h3 click me
+
+mixin button(name, clear = false)
+    if (clear)
+        button.clear-quantity-invisible
+            h3=name
+    else
+        button.apply-quantity
+            h3=name
+
+mixin button-visible(name)
+    button.clear-quantity-invisible.clear-quantity
+        h3=name
+
+mixin button-start(name)
+    button.main-btn-start   
+        h3=name
+    +btn('btn-arrow', 'button', 'arrow_forward')

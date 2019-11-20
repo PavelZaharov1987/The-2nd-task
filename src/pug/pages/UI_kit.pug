@@ -13,6 +13,7 @@ include ../includes/components/toggle-input/toggle-input
 include ../includes/components/star/star
 include ../includes/components/like-btn/like-btn
 include ../includes/components/range-slider/range-slider
+include ../includes/components/button/button
 
 block variables
   - var title = 'UI kit page';
@@ -123,5 +124,21 @@ block content
         .form-elements-right
           .ns
             +range-slider('range slider')
+          .form-field
+            h3 buttons
+            .form-field-button
+              +button-solid()
+            .form-field-button
+              +button-solid('focus')
+            .form-field-button
+              +button-border()
+            .form-field-button
+              +button-border('focus')
+            .form-field-button-empty
+              .form-field-button
+                +button('click me')
+              .form-field-button
+                +button-visible('click me')
+            +button-start('перейти к оплате')
         //- div.title
       

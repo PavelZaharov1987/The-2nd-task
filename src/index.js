@@ -16,6 +16,7 @@ import './pug/includes/components/toggle-input'
 import './pug/includes/components/star'
 import './pug/includes/components/like-btn'
 import './pug/includes/components/range-slider'
+import './pug/includes/components/button'
 
 // SCSS
 import './assets/scss/main.scss'
