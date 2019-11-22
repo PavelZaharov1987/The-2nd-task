@@ -14,6 +14,7 @@ include ../includes/components/star/star
 include ../includes/components/like-btn/like-btn
 include ../includes/components/range-slider/range-slider
 include ../includes/components/button/button
+include ../includes/components/pagination/pagination
 
 block variables
   - var title = 'UI kit page';
@@ -140,5 +141,7 @@ block content
               .form-field-button
                 +button-visible('click me')
             +button-start('перейти к оплате')
+          .form-field
+            +pagination()
         //- div.title
       

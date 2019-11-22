@@ -1,0 +1,31 @@
+.simple-pagination {
+    display: flex;
+    
+}
+
+.simple-pagination ul {
+    display: flex;
+    margin: 0 auto;
+}
+
+.simple-pagination ul li {
+	width: 40px;
+    height: 40px;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.simple-pagination .active {
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius: 22px;
+}
+
+.simple-pagination ul li:first-child, .simple-pagination ul li:last-child {
+	background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+	border-radius: 22px;
+}
+
+.simple-pagination ul .disabled {
+    display: none;
+}
